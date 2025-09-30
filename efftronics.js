@@ -33,11 +33,11 @@ $(function(){
             if(current > $this.data('count')){
                 $this.html($this.data('count'));
             } else {
-                setTimeout(function(){count($this)}, 50);
+                setTimeout(function(){count($this)}, 70);
             }
         }
         $(".stat-count").each(function() {
-          $(this).data('count', parseInt($(this).html(), 10));
+          $(this).data('count', parseInt($(this).html(), 20));
           $(this).html('0');
           count($(this));
         });
@@ -56,8 +56,8 @@ $(function(){
         $(".iotCol").css("z-index", "1");
     });
     $("#smart-cities").mouseover(function(){
-        $(".ssCol").css("z-index", "1");
-        $(".sbCol").css("z-index", "1");
+        $(".ssCol").css("z-index", "3");
+        $(".sbCol").css("z-index", "2");
         $(".scCol").css("z-index", "2");
         $(".iotCol").css("z-index", "1");
     });
